@@ -1,0 +1,54 @@
+  我们在写JavaScript代码的时候：
+  
+		在已经引入了getParameter.js这个类库的情况下可以--根据其他页面传递过来的参数的name获取对应的值.
+		一下代码中的cid和rname就是从其他页面的传过来的，
+		调用类库里面getParameter("cid")的方法可以获取对应的值。
+  
+  <script>
+  
+	var cid = getParameter("cid");
+    // alert(cid);
+    var rname = getParameter("rname");
+	
+  </script>
+  
+  
+  
+  
+  如果不用这个工具的话
+  
+	<script>
+		var search = location.search;
+		// 切割字符串，拿到第二个值
+		var cid = search.split("=")[1];
+	</script>
+	
+	
+	只能这么操作，并且还有局限性，就是URL地址里面只能有一个参数，例如localhost:8080/list.html?cid=5&rname=武汉
+	的话用=分割就实现不了。
+	如果有多个参数的话就只能通过上面的工具了。
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
